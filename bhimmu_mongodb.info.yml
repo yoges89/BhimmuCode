@@ -1,0 +1,7 @@
+name: 'Bhimmu MongoDB'
+type: module
+description: 'MongoDB CRUD operation in Drupal 10'
+package: Bhimmu
+core_version_requirement: ^10 || ^11
+dependencies:
+  - mongodb:mongodb

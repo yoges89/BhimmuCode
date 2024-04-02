@@ -1,0 +1,8 @@
+bhimmu_mongodb.crud:
+  route_name: bhimmu_mongodb.crud
+  title: "Tasks"
+  base_route: bhimmu_mongodb.crud
+bhimmu_mongodb.crud.create:
+  route_name: bhimmu_mongodb.crud.create
+  title: "Create"
+  base_route: bhimmu_mongodb.crud
