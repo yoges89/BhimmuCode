@@ -1,0 +1,39 @@
+bhimmu_mongodb.crud:
+  path: '/bhimmu-mongodbs/tasks'
+  defaults:
+    _title: 'Tasks'
+    _controller: '\Drupal\bhimmu_mongodb\Controller\BhimmuMongodbController::taskList'
+  requirements:
+    _permission: 'administer account settings'
+
+bhimmu_mongodb.crud.view:
+  path: '/bhimmu-mongodb/task/{task_id}'
+  defaults:
+    _title: 'View task'
+    _controller: '\Drupal\bhimmu_mongodb\Controller\BhimmuMongodbController::getTask'
+  requirements:
+    _permission: 'administer account settings'
+
+bhimmu_mongodb.crud.create:
+  path: '/bhimmu-mongodb/task/create'
+  defaults:
+    _title: 'Create task'
+    _form: 'Drupal\bhimmu_mongodb\Form\TaskForm'
+  requirements:
+    _permission: 'administer account settings'
+
+bhimmu_mongodb.crud.edit:
+  path: '/bhimmu-mongodb/task/{task_id}/edit'
+  defaults:
+    _title: 'Create task'
+    _form: 'Drupal\bhimmu_mongodb\Form\TaskForm'
+  requirements:
+    _permission: 'administer account settings'
+
+# bhimmu_mongodb.crud.delete:
+#   path: '/bhimmu-mongodb/task/{task_id}/delete'
+#   defaults:
+#     _title: 'Create task'
+#     _form: 'Drupal\bhimmu_mongodb\Form\TaskForm'
+#   requirements:
+#     _permission: 'administer account settings'
