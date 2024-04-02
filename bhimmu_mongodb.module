@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Bhimmu MongoDB module.
+ */
+
+/**
+ * Implements hook_theme()
+ */
+function bhimmu_mongodb_theme() {
+  return [
+    'task' => [
+      'variables' => [
+        'task' => [],
+      ],
+    ],
+  ];
+}
