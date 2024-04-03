@@ -88,7 +88,7 @@ final class BhimmuMongodbController extends ControllerBase {
               ],
               'delete' => [
                 'title' => $this->t('<i class="fa-solid fa-square-rss"></i> Delete'),
-                'url' => Url::fromRoute('bhimmu_mongodb.crud'),
+                'url' => Url::fromRoute('bhimmu_mongodb.crud.delete', ['task_id' => $task->_id]),
               ],
             ],
           ],

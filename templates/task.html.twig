@@ -5,8 +5,11 @@
  */
 #}
 
-<div class="items gap">
-	<div>{{ task.taskName }}</div>
-	<div>{{ task.isComplete }}</div>
-	<div>{{ task.remark }}</div>
+<div class="box dark">
+  <h3>{{ task.taskName }}</h3>
+  <h4>Completed: {{ task.isComplete }}</h4>
+  <p>{{ task.remark }}</p>
 </div>
+
+{# Link to node page. #}
+<a href="{{ path('bhimmu_mongodb.crud') }}">{{ 'Back'|t }}</a>
