@@ -37,3 +37,11 @@ bhimmu_mongodb.crud.edit:
 #     _form: 'Drupal\bhimmu_mongodb\Form\TaskForm'
 #   requirements:
 #     _permission: 'administer account settings'
+
+bhimmu_mongodb.crud.delete:
+  path: '/bhimmu-mongodb/task/{task_id}/delete'
+  defaults:
+    _title: 'Task Delete Confirm'
+    _form: 'Drupal\bhimmu_mongodb\Form\TaskDeleteConfirmForm'
+  requirements:
+    _permission: 'administer site configuration'
